@@ -7,7 +7,7 @@
     },
     "servers": [
         {
-            "url": "http://localhost:8080",
+            "url": "https://114258c93e1b.ngrok-free.app/",
             "description": "Taskip API Server"
         }
     ],
