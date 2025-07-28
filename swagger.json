@@ -7,8 +7,13 @@
     },
     "servers": [
         {
-            "url": "https://api.taskip.ai",
+            "url": "http://localhost:8080",
             "description": "Taskip API Server"
+        }
+    ],
+    "security": [
+        {
+            "ApiKeyAuth": []
         }
     ],
     "paths": {
@@ -346,6 +351,13 @@
         }
     },
     "components": {
+        "securitySchemes": {
+            "ApiKeyAuth": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "X-Secret-Key"
+            }
+        },
         "schemas": {
             "CompanyRequest": {
                 "required": [
